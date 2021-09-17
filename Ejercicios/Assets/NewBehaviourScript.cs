@@ -10,22 +10,24 @@ public class NewBehaviourScript : MonoBehaviour
     public float numerodecimal = 1.2f ;
     public int numeroentero = 12;
     public bool vivo = true;
-
+    int n = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        print(mensaje);
-        print(numerodecimal);
-        print(numeroentero);
-        print(vivo);
+       
+        
 
-        print(numeroentero + numerodecimal);
-        }
+    }
 
     // Update is called once per frame
     void Update()
     {
-        print(numeroentero + numerodecimal);
+        n++;
+        if (n < 10)
+        {
+            print(n);
+        }
+        
     }
 }
