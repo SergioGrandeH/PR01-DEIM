@@ -17,29 +17,17 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        while (n < 20)
+        while ( n != 5 )
         {
-            n++;
-            print(n);   
-        if (n == 20)
-            {
-                print(mensaje);
-            }
+            n = Random.Range(10000, -1000);
+            print(n);
         }
-        for (m = 20; m <= 30; m++)
-        { 
-            print(m); 
-            if(m == 30)
-            {
-                print(mensaje);
-            }
-        }
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-    
+   
     }
 }
