@@ -17,12 +17,10 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        while ( n != 5 )
+        for (int n = 0; n < 5; n++)
         {
-            n = Random.Range(10000, -1000);
-            print(n);
+             print(n); 
         }
-       
     }
 
     // Update is called once per frame
