@@ -41,8 +41,16 @@ public class NewBehaviourScript : MonoBehaviour
                 y = 0;
                 z++;
             }
+            if (y == 1)
+
+            {
+                StopCoroutine("contador");
+            }
+
         }
+
     }
+    
 
 
 
@@ -58,7 +66,6 @@ public class NewBehaviourScript : MonoBehaviour
         
         StartCoroutine("contador");
        
-
     }
     
     // Update is called once per frame
