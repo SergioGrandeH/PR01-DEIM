@@ -19,14 +19,19 @@ public class NewBehaviourScript : MonoBehaviour
             int resultado = num1 * num2;
             return resultado;
         }
-        void Saludo ( string Hola)
-    {
-        print("hola" + Hola);
-    }
+        
+   
     // Start is called before the first frame update
     void Start()
     {
-        Saludo("Juan");
+        int resultado = multiplicar(5, 10);
+        print(resultado);
+        if (resultado != 60)
+        {
+            bool vivo = false;
+            print (vivo);
+                }
+
     }
     
     // Update is called once per frame
