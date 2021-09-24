@@ -10,22 +10,24 @@ public class NewBehaviourScript : MonoBehaviour
     public float numerodecimal = 1.2f ;
     public int numeroentero = 12;
     public bool vivo = true;
-    int n = 0;
-    int l = 10;
+    int num1 = 50;
+    int num2 = 15;
     int m = 20;
+    int Multiplicar; 
+    int multiplicar (int num1, int num2)
+        {
+            int resultado = num1 * num2;
+            return resultado;
+        }
+         
 
     // Start is called before the first frame update
     void Start()
     {
-        while (n != 4) 
-        {
-            n = Random.Range(-1000, 1000);
-
-            print(n);
-        }
+        int res = multiplicar(50, 15);
+        print(res);
     }
     
-
     // Update is called once per frame
     void Update()
     {
