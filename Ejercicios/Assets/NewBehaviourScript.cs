@@ -10,25 +10,21 @@ public class NewBehaviourScript : MonoBehaviour
     public float numerodecimal = 1.2f ;
     public int numeroentero = 12;
     public bool vivo = true;
-   
+    int n = 0;
     int l = 10;
     int m = 20;
 
     // Start is called before the first frame update
     void Start()
     {
-
-        for (int n = 0; n < 10; n++)
+        while (n != 4) 
         {
-            print(n);
-            if (n > 3)
+            n = Random.Range(-1000, 1000);
 
-            {
-                print(mensaje);
-            }
+            print(n);
         }
-         
     }
+    
 
     // Update is called once per frame
     void Update()
